@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ytc</groupId>
-    <artifactId>carmall-consumer</artifactId>
+    <artifactId>carmall-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>carmall-consumer</name>
+    <name>carmall-feign</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,6 +27,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
         <dependency>
