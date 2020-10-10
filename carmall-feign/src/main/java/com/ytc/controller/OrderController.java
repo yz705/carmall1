@@ -1,5 +1,6 @@
 package com.ytc.controller;
 
+import com.ytc.util.RandomIDUtil;
 import org.springframework.stereotype.Controller;
 
 /**
