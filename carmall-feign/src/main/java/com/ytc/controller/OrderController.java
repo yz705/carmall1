@@ -49,9 +49,12 @@ public class OrderController {
 
 
     @RequestMapping("select")
-    public String select(Model m){
+    public String select(Model m,Order o,Integer valname,String whatname,Integer address,Integer address1,Integer address2){
+        String str = "";
+        if (address1!=null){
+        
+        }
         List<Order>list=orderService.select();
         return "suser/orderShow.html";
     }
-
 }
