@@ -6,6 +6,19 @@
 </head>
 <script src="../js/jquery.min.js"></script>
 <body>
-
+   <h1>购车订单系统</h1>
+   <input type="button" id="vip" value="普通用户"><br>
+   <input type="button" id="svip" value="vip用户"><br>
 </body>
+<script>
+    $("#vip").click(function (){
+        location.href="logistics/cuserLogin";
+    })
+
+    $("#svip").click(function (){
+        location.href="logistics/suserLogin";
+    })
+
+
+</script>
 </html>

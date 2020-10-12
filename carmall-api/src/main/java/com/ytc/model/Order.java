@@ -7,7 +7,7 @@ public class Order {
 
     private Date ordertime;
 
-    private Double todal;
+    private String ordership;
 
     private Integer state;
 
@@ -35,12 +35,12 @@ public class Order {
         this.ordertime = ordertime;
     }
 
-    public Double getTodal() {
-        return todal;
+    public String getOrdership() {
+        return ordership;
     }
 
-    public void setTodal(Double todal) {
-        this.todal = todal;
+    public void setOrdership(String ordership) {
+        this.ordership = ordership;
     }
 
     public Integer getState() {
@@ -88,7 +88,7 @@ public class Order {
         return "Order{" +
                 "oid=" + oid +
                 ", ordertime=" + ordertime +
-                ", todal=" + todal +
+                ", todal=" + ordership +
                 ", state=" + state +
                 ", address='" + address + '\'' +
                 ", name='" + name + '\'' +
