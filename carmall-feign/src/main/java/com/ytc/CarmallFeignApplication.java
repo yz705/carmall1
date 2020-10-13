@@ -15,16 +15,16 @@ public class CarmallFeignApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CarmallFeignApplication.class, args);
-        for (int i=0;i<=100;i++){
-            test();
-        }
-
-    }
-
-    public static void test(){
-        RandomIDUtil ra=new RandomIDUtil();
-        long l = ra.nextId();
-        System.out.println(l);
+//        for (int i=0;i<=100;i++){
+//            test();
+//        }
+//
+//    }
+//
+//    public static void test(){
+//        RandomIDUtil ra=new RandomIDUtil();
+//        long l = ra.nextId();
+//        System.out.println(l);
     }
 
 }

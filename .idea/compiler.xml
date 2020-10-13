@@ -6,21 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="carmall-provider-trolley" />
-        <module name="carmall-provider-login" />
         <module name="carmall-feign" />
         <module name="carmall-provider-order" />
-        <module name="carmall-provider-register" />
-        <module name="carmall-provider-protal" />
         <module name="carmall-eureka" />
         <module name="carmall-api" />
-        <module name="carmall-provider-pay" />
-        <module name="carmall-provider-backstage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="carmall-consumer" target="1.8" />
+      <module name="carmall-provider-backstage" target="1.8" />
+      <module name="carmall-provider-login" target="1.8" />
+      <module name="carmall-provider-pay" target="1.8" />
+      <module name="carmall-provider-protal" target="1.8" />
+      <module name="carmall-provider-register" target="1.8" />
       <module name="carmall-provider-search" target="1.8" />
+      <module name="carmall-provider-trolley" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

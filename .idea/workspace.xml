@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1aa7ce16-b894-434d-b3d2-f9bdf9a0c4c3" name="Default Changelist" comment="5">
+      <change afterPath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/model/Province.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/mapper/ProvinceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/mapping/mapper/ProvinceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/carmall.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/mapper/OrderItemMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/mapper/OrderItemMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/resources/mapping/OrderItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/mapping/mapper/OrderItemMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/resources/mapping/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/mapping/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/mapper/OrderItemMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/mapper/OrderMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/model/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/mapping/OrderItemMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/mapping/OrderMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/CarmallFeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/CarmallFeignApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/suser/order/orderShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/orderShow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/suser/order/toQueryShow.html" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/templates/suser/order/toQueryShow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/src/main/java/com/ytc/CarmallProviderBackstageApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-backstage/src/test/java/com/ytc/CarmallProviderBackstageApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/src/main/java/com/ytc/CarmallProviderLoginApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-login/src/test/java/com/ytc/CarmallProviderLoginApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/CarmallProviderOrderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/CarmallProviderOrderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/src/main/java/com/ytc/CarmallProviderPayApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-pay/src/test/java/com/ytc/CarmallProviderPayApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/src/main/java/com/ytc/CarmallProviderProtalApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-protal/src/test/java/com/ytc/CarmallProviderProtalApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/src/main/java/com/ytc/CarmallProviderRegisterApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-register/src/test/java/com/ytc/CarmallProviderRegisterApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/src/main/java/com/ytc/CarmallProviderTrolleyApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-provider-trolley/src/test/java/com/ytc/CarmallProviderTrolleyApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/resources/templates/orderShow.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/controller/OrderController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/util/RandomIDUtil.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../tools/maven/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="E:\tools\maven\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1icTq13Kd4bJADoPX76y9u998UK" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/mapper" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.5505747" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\yz\carmall\carmall-api\src\main\java\com\ytc\mapper" />
+      <recent name="E:\yz\carmall\carmall-api\src\main\resources\mapping" />
+      <recent name="E:\yz\carmall\carmall-api\src\main\java\com\ytc\model" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ytc.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yz\carmall\carmall-provider-order\src\main\resources\mapping\mapper" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources\templates" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources\static" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\resources\templates\suser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CarmallFeignApplication">
+    <configuration name="CarmallFeignApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ytc.CarmallFeignApplication" />
+      <module name="carmall-feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ytc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ytc.util.IdWorker" />
+      <module name="carmall-feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ytc.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallEurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderBackstageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-backstage" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderBackstageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderLoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderPayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderPayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderProtalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-protal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderProtalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderRegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-register" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderRegisterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarmallProviderTrolleyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="carmall-provider-trolley" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ytc.CarmallProviderTrolleyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CarmallFeignApplication" />
+        <item itemvalue="Application.IdWorker" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1aa7ce16-b894-434d-b3d2-f9bdf9a0c4c3" name="Default Changelist" comment="" />
+      <created>1602206068202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602206068202</updated>
+      <workItem from="1602206069843" duration="67000" />
+      <workItem from="1602206228035" duration="9353000" />
+      <workItem from="1602229409733" duration="8743000" />
+      <workItem from="1602292025980" duration="18856000" />
+      <workItem from="1602466120148" duration="11017000" />
+      <workItem from="1602486016734" duration="1002000" />
+      <workItem from="1602487511902" duration="8648000" />
+      <workItem from="1602504609205" duration="2233000" />
+      <workItem from="1602552411286" duration="18352000" />
+      <workItem from="1602580433417" duration="4633000" />
+    </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1602247948613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602247948613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2">
+      <created>1602330646896</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602330646896</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3">
+      <created>1602332446929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602332446929</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4">
+      <created>1602503233551</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1602503233551</updated>
+    </task>
+    <task id="LOCAL-00005" summary="5">
+      <created>1602507093792</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602507093792</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="2" />
+    <MESSAGE value="3" />
+    <MESSAGE value="4" />
+    <MESSAGE value="5" />
+    <option name="LAST_COMMIT_MESSAGE" value="5" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1602313569707">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1602313569707" />
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1602579478659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602579478659" />
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602569439153">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1602569439153" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602467078163">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602467078163" />
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1602206117721">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602206117721" />
+    <state width="1493" height="429" key="GridCell.Tab.0.bottom" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.0.center" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.0.left" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.0.right" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.1.bottom" timestamp="1602583488386">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602583488386" />
+    <state width="1493" height="429" key="GridCell.Tab.1.center" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.1.left" timestamp="1602583488385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602583488385" />
+    <state width="1493" height="429" key="GridCell.Tab.1.right" timestamp="1602583488386">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="429" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602583488386" />
+    <state width="1478" height="317" key="GridCell.Tab.2.bottom" timestamp="1602570879259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="317" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602570879259" />
+    <state width="1478" height="317" key="GridCell.Tab.2.center" timestamp="1602570879258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="317" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1602570879258" />
+    <state width="1478" height="317" key="GridCell.Tab.2.left" timestamp="1602570879258">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="317" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1602570879258" />
+    <state width="1478" height="317" key="GridCell.Tab.2.right" timestamp="1602570879259">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1478" height="317" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1602570879259" />
+    <state x="270" y="56" key="SettingsEditor" timestamp="1602206315089">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602206315089" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602569392938">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602569392938" />
+    <state x="561" y="270" key="scopes" timestamp="1602331995469">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="270" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1602331995469" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602559751067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602559751067" />
+  </component>
+</project>

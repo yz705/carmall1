@@ -1,11 +1,14 @@
 package com.ytc.controller;
 
 import com.ytc.model.Order;
+import com.ytc.model.Province;
 import com.ytc.service.OrderService;
 import jdk.nashorn.internal.ir.annotations.Reference;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -20,41 +23,48 @@ import java.util.List;
 @Controller
 @RequestMapping("/order")
 public class OrderController {
-    @Reference
+    @Autowired
     private OrderService orderService;
 
-    @RequestMapping("top")
+    @RequestMapping("/top")
     public String top(){
-        return "suser/frame/top.html";
+        return "suser/frame/top";
     }
 
     @RequestMapping("center")
     public String center(){
-        return "suser/frame/center.html";
+        return "suser/frame/center";
     }
 
     @RequestMapping("left")
     public String left(){
-        return "suser/frame/left.html";
+        return "suser/frame/left";
     }
     @RequestMapping("test")
     public String test(){
-        return "suser/order/suserShow.html";
+        return "suser/order/suserShow";
     }
 
     @RequestMapping("toQueryShow")
     public String toQueryShow(){
-        return "suser/order/toQueryShow.html";
+        return "suser/order/toQueryShow";
+    }
+
+    @RequestMapping("/select")
+    public String select(Model m){
+      List<Order> list=orderService.select();
+        System.out.println(list);
+        m.addAttribute("list",list);
+        return "orderShow";
     }
 
 
-    @RequestMapping("select")
-    public String select(Model m,Order o,Integer valname,String whatname,Integer address,Integer address1,Integer address2){
-        String str = "";
-        if (address1!=null){
-        
-        }
-        List<Order>list=orderService.select();
-        return "suser/orderShow.html";
-    }
+//    @RequestMapping("selectProvince")
+//    @ResponseBody
+//    public List<Province> selectProvince(){
+//        OrderController provinceService;
+//        List<Province> list=provinceService.selectProvince();
+//        return list;
+//    }
+
 }

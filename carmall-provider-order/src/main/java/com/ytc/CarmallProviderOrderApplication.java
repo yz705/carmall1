@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableEurekaClient
+
 public class CarmallProviderOrderApplication {
 
     public static void main(String[] args) {

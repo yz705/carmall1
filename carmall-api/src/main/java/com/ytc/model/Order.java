@@ -19,6 +19,12 @@ public class Order {
 
     private String ordernumber;
 
+    private String ordersheng;
+
+    private String ordershi;
+
+    private String orderqu;
+
     public Integer getOid() {
         return oid;
     }
@@ -83,19 +89,47 @@ public class Order {
         this.ordernumber = ordernumber;
     }
 
+    public String getOrdersheng() {
+        return ordersheng;
+    }
+
+    public void setOrdersheng(String ordersheng) {
+        this.ordersheng = ordersheng;
+    }
+
+    public String getOrdershi() {
+        return ordershi;
+    }
+
+    public void setOrdershi(String ordershi) {
+        this.ordershi = ordershi;
+    }
+
+    public String getOrderqu() {
+        return orderqu;
+    }
+
+    public void setOrderqu(String orderqu) {
+        this.orderqu = orderqu;
+    }
+
     @Override
     public String toString() {
         return "Order{" +
                 "oid=" + oid +
                 ", ordertime=" + ordertime +
-                ", todal=" + ordership +
+                ", ordership='" + ordership + '\'' +
                 ", state=" + state +
                 ", address='" + address + '\'' +
                 ", name='" + name + '\'' +
                 ", telephone='" + telephone + '\'' +
                 ", ordernumber='" + ordernumber + '\'' +
+                ", ordersheng='" + ordersheng + '\'' +
+                ", ordershi='" + ordershi + '\'' +
+                ", orderqu='" + orderqu + '\'' +
                 '}';
     }
 
-
+    public Order() {
+    }
 }
