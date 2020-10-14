@@ -3,6 +3,8 @@ package com.ytc.controller;
 import com.ytc.model.Order;
 import com.ytc.model.Province;
 import com.ytc.service.OrderService;
+import com.ytc.service.ProvinceService;
+import com.ytc.service.ProvinceServiceApi;
 import jdk.nashorn.internal.ir.annotations.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +27,9 @@ import java.util.List;
 public class OrderController {
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private ProvinceService provinceService;
 
     @RequestMapping("/top")
     public String top(){
@@ -50,21 +55,20 @@ public class OrderController {
         return "suser/order/toQueryShow";
     }
 
-    @RequestMapping("/select")
-    public String select(Model m){
-      List<Order> list=orderService.select();
-        System.out.println(list);
-        m.addAttribute("list",list);
+    @RequestMapping("/queryOrder")
+    public String select(Model m,Integer address1,Integer address2) {
+        String str = "";
+        if (address1!=null){
+            Order o = orderService.selectOrder(address1);
+            str+=o.getOrdersheng();
+        }
+        if (address2!=null){
+            Order o = orderService.selectOrder(address2);
+            str+=o.getOrdershi();
+        }
+
+        List<Order> list = orderService.select();
+        m.addAttribute("list", list);
         return "orderShow";
     }
-
-
-//    @RequestMapping("selectProvince")
-//    @ResponseBody
-//    public List<Province> selectProvince(){
-//        OrderController provinceService;
-//        List<Province> list=provinceService.selectProvince();
-//        return list;
-//    }
-
 }

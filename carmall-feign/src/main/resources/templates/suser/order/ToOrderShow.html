@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+<form id="lkjForm">
+    <select name="valueName">
+        <option value="0">全部</option>
+        <option value="1">收货人</option>
+        <option value="2">手机号</option>
+        <option value="3">订单号</option>
+    </select>
+    <br>
+    <select name="address">
+        <option value="1">按发货地</option>
+        <option value="2">按收货地</option>
+    </select>
+    <select name="address1" id="sheng" onchange="change()">
+        <option value="">请选择</option>
+    </select>
+    <select name="address2" id="shi">
+        <option value="">请选择</option>
+    </select><br>
+    <input type="button" value="查询" onclick="serach()">
+    <br>
+</form>
+    <div id="divv"></div>
+</body>
+<script>
+    $(function () {
+        serach();
+    })
+
+    $.ajax({
+        url:"/order/queryOrder",
+        type:"get",
+        dataType:"html",
+        data:$("#lkjForm").serialize(),
+        success:function (data) {
+            $("#divv").html(data);
+        },error:function () {
+            alert("查询失败");
+        }
+    })
+</script>
+</html>

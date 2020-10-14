@@ -1,8 +1,9 @@
 package com.ytc.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Order {
+public class Order implements Serializable {
     private Integer oid;
 
     private Date ordertime;
@@ -18,7 +19,6 @@ public class Order {
     private String telephone;
 
     private String ordernumber;
-
     private String ordersheng;
 
     private String ordershi;

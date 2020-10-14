@@ -9,16 +9,16 @@
     <result column="address" property="address" jdbcType="VARCHAR" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="telephone" property="telephone" jdbcType="VARCHAR" />
-    <result column="ordernumber" property="ordernumber" javaType="VARCHAR"/>
-    <result column="ordership" property="ordership" javaType="VARCHAR"/>
-    <result column="ordersheng" property="ordersheng" javaType="VARCHAR"/>
-    <result column="ordershi" property="ordershi" javaType="VARCHAR"/>
-    <result column="orderqu" property="orderqu" javaType="VARCHAR"/>
+    <result column="ordernumber" property="ordernumber" jdbcType="VARCHAR"/>
+    <result column="ordership" property="ordership" jdbcType="VARCHAR"/>
+    <result column="ordersheng" property="ordersheng" jdbcType="VARCHAR"/>
+    <result column="ordershi" property="ordershi" jdbcType="VARCHAR"/>
+    <result column="orderqu" property="orderqu" jdbcType="VARCHAR"/>
   </resultMap>
 
 
 
-  <select id="select" resultMap="BaseResultMap">
+  <select id="queryOrder" resultMap="BaseResultMap">
     select * from `order`
   </select>
 

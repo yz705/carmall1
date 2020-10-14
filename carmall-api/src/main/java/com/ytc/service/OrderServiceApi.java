@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 public interface OrderServiceApi {
-    @RequestMapping("/select")
+    @RequestMapping("/queryOrder")
     List<Order> select();
+
+    Order selectOrder(Integer address1);
 }
