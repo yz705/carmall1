@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/carmall.iml" filepath="$PROJECT_DIR$/.idea/carmall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-api/carmall-api.iml" filepath="$PROJECT_DIR$/carmall-api/carmall-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-eureka/carmall-eureka.iml" filepath="$PROJECT_DIR$/carmall-eureka/carmall-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-feign/carmall-feign.iml" filepath="$PROJECT_DIR$/carmall-feign/carmall-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-provider-order/carmall-provider-order.iml" filepath="$PROJECT_DIR$/carmall-provider-order/carmall-provider-order.iml" />
+    </modules>
+  </component>
+</project>

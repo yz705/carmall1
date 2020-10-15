@@ -25,6 +25,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/order")
 public class OrderController {
+
     @Autowired
     private OrderService orderService;
 
@@ -45,6 +46,7 @@ public class OrderController {
     public String left(){
         return "suser/frame/left";
     }
+
     @RequestMapping("test")
     public String test(){
         return "suser/order/suserShow";
@@ -55,20 +57,38 @@ public class OrderController {
         return "suser/order/toQueryShow";
     }
 
+    @RequestMapping("selectProvince")
+    @ResponseBody
+    public List<Province> selectProvince(){
+        List<Province> list=provinceService.selectProvince();
+        return list;
+    }
+
     @RequestMapping("/queryOrder")
-    public String select(Model m,Integer address1,Integer address2) {
+    public String select(Model m,Order o,Integer valuename,String whatname,Integer address,Integer address1,Integer address2) {
+
         String str = "";
+
         if (address1!=null){
-            Order o = orderService.selectOrder(address1);
+            o = orderService.selectOrder(address1);
             str+=o.getOrdersheng();
         }
+
         if (address2!=null){
-            Order o = orderService.selectOrder(address2);
+            o = orderService.selectOrder(address2);
             str+=o.getOrdershi();
         }
+        if (valuename==1){
 
+        }else if (valuename==2){
+            o.setTelephone(whatname);
+        }else if (valuename==3){
+
+        }
         List<Order> list = orderService.select();
         m.addAttribute("list", list);
         return "orderShow";
     }
+
+
 }

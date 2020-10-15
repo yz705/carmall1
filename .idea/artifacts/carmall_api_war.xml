@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="carmall-api:war">
+    <output-path>$PROJECT_DIR$/carmall-api/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>carmall-api</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="carmall-api.war">
+      <element id="artifact" artifact-name="carmall-api:war exploded" />
+    </root>
+  </artifact>
+</component>

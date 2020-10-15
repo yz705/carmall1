@@ -32,8 +32,49 @@
 <script>
     $(function () {
         serach();
+        selectProvince();
     })
 
+    function selectProvince(){
+        $.ajax({
+            url:"/order/selectProvince",
+            type:"post",
+            dataType: "json",
+            success:function (data) {
+                var str = "<option value=''>请选择</option>";
+                for (var i=0 ; i<data.length;i++){
+                    str+="<option value='"+data[i].provinceid+"'>"+data[i].provincename+"</option>";
+                }
+                $("#sheng").html(str);
+            },error:function () {
+                alert("查询省失败");
+            }
+        })
+    }
+
+    var city = null;
+    function selectCity(){
+        $.ajax({
+            url:"/order/selectCity",
+            type:"post",
+            dataType:"json",
+            success:function (data) {
+                city=data;
+            },error:function () {
+                alert("查询市失败");
+            }
+        })
+    }
+
+    function changge(){
+        var sheng = $("#sheng").val();
+        var str = "<option value=''>请选择</option>";
+        for (var i=0;i<city.length;i++){
+            if (city[i].provinceid==sheng){
+                str+="<option value='"+data[i].provinceid+"'>"+data[i].provincename+"</option>";
+            }
+        }
+    }
     $.ajax({
         url:"/order/queryOrder",
         type:"get",

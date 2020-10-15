@@ -13,10 +13,9 @@
     <result column="ordership" property="ordership" jdbcType="VARCHAR"/>
     <result column="ordersheng" property="ordersheng" jdbcType="VARCHAR"/>
     <result column="ordershi" property="ordershi" jdbcType="VARCHAR"/>
-    <result column="orderqu" property="orderqu" jdbcType="VARCHAR"/>
   </resultMap>
 
-
+  <select id="" resultMap=""></select>
 
   <select id="queryOrder" resultMap="BaseResultMap">
     select * from `order`

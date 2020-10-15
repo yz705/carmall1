@@ -19,11 +19,10 @@ public class Order implements Serializable {
     private String telephone;
 
     private String ordernumber;
+
     private String ordersheng;
 
     private String ordershi;
-
-    private String orderqu;
 
     public Integer getOid() {
         return oid;
@@ -105,14 +104,6 @@ public class Order implements Serializable {
         this.ordershi = ordershi;
     }
 
-    public String getOrderqu() {
-        return orderqu;
-    }
-
-    public void setOrderqu(String orderqu) {
-        this.orderqu = orderqu;
-    }
-
     @Override
     public String toString() {
         return "Order{" +
@@ -126,7 +117,6 @@ public class Order implements Serializable {
                 ", ordernumber='" + ordernumber + '\'' +
                 ", ordersheng='" + ordersheng + '\'' +
                 ", ordershi='" + ordershi + '\'' +
-                ", orderqu='" + orderqu + '\'' +
                 '}';
     }
 

@@ -1,7 +1,6 @@
 package com.ytc.mapper;
 
 import com.ytc.model.Order;
-import com.ytc.model.Province;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 

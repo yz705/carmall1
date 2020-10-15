@@ -7,35 +7,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="carmall-feign" />
+        <module name="carmall-api" />
         <module name="carmall-provider-order" />
         <module name="carmall-eureka" />
-        <module name="carmall-api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="carmall-consumer" target="1.8" />
-      <module name="carmall-provider-backstage" target="1.8" />
-      <module name="carmall-provider-login" target="1.8" />
-      <module name="carmall-provider-pay" target="1.8" />
-      <module name="carmall-provider-protal" target="1.8" />
-      <module name="carmall-provider-register" target="1.8" />
-      <module name="carmall-provider-search" target="1.8" />
-      <module name="carmall-provider-trolley" target="1.8" />
+    <bytecodeTargetLevel>
+      <module name="carmall-api" target="1.7" />
+      <module name="carmall-eureka" target="1.8" />
+      <module name="carmall-feign" target="1.8" />
+      <module name="carmall-provider-order" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="carmall-consumer" options="-parameters" />
       <module name="carmall-eureka" options="-parameters" />
       <module name="carmall-feign" options="-parameters" />
-      <module name="carmall-provider-backstage" options="-parameters" />
-      <module name="carmall-provider-login" options="-parameters" />
       <module name="carmall-provider-order" options="-parameters" />
-      <module name="carmall-provider-pay" options="-parameters" />
-      <module name="carmall-provider-protal" options="-parameters" />
-      <module name="carmall-provider-register" options="-parameters" />
-      <module name="carmall-provider-search" options="-parameters" />
-      <module name="carmall-provider-trolley" options="-parameters" />
     </option>
   </component>
 </project>
