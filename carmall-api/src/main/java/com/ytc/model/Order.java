@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Order implements Serializable {
+    /*private static final long ordernumber = */
+   /* private static final long ordernumber = -903589261972255366L;*/
     private Integer oid;
 
     private Date ordertime;

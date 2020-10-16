@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * 〈一句话功能简述〉<br>
+ * 〈controller层〉<br>
  * 〈〉
  *
  * @author yaozheng
@@ -83,8 +83,9 @@ public class OrderController {
         }else if (valuename==2){
             o.setTelephone(whatname);
         }else if (valuename==3){
-
+            o.setOrdernumber(whatname);
         }
+
         List<Order> list = orderService.select();
         m.addAttribute("list", list);
         return "orderShow";
