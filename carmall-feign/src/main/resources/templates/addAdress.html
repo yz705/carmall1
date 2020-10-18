@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+<form id="addForm">
+    收货人:<input type="text" name="consignee"><br>
+    电话:<input type="text" name="phone"><br>
+    地址: 省:<select name="province.areaId"  id="sheng" onchange="changeprvince()">
+            <option value="">请选择</option>
+          </select>
+        市:<select name="city.areaId"  id="city" onchange="changecity()">
+        <option value="">请选择</option>
+        </select>
+       区：<select name="district.areaId"  id="district">
+        <option value="">请选择</option>
+        </select>
+        街道:<input type="text" name="street"><br>
+
+        <input type="button" value="确定" onclick="adressadd()">
+</form>
+</body>
+<script>
+    $(function (){
+        selectprovince()
+
+    })
+    function adressadd(){
+        $.ajax({
+            url:"/adress/adressadd",
+            data:$("#addForm").serialize(),
+            type:"post",
+            success:function (data){
+                history.go(-1);
+            },error:function (){
+                alert("新增地址失败");
+            }
+        })
+    }
+    function selectprovince(){
+        $.ajax({
+            url:"/adress/selectprovince",
+            type:"post",
+            dataType:"json",
+            success:function (data){
+                var str="<option value=''>请选择</option>";
+                for (var i=0;i<data.length;i++){
+                    str+="<option value='"+data[i].areaId+"'>"+data[i].areaName+"</option>";
+                }
+                $("#sheng").html(str);
+            },error:function (){
+                alert("查询省失败");
+            }
+        })
+    }
+    
+    function changeprvince() {
+        var sheng=$("#sheng").val();
+        $.ajax({
+            url:"/adress/selectCity?sheng="+sheng,
+            type:"post",
+            dataType:"json",
+            success:function (data){
+                var str="<option value=''>请选择</option>";
+                for (var i=0;i<data.length;i++){
+                    str+="<option value='"+data[i].areaId+"'>"+data[i].areaName+"</option>";
+                }
+                $("#city").html(str);
+            },error:function (){
+                alert("查询市失败");
+            }
+        })
+
+    }
+    function changecity() {
+        var city=$("#city").val();
+        $.ajax({
+            url:"/adress/selectdistrict?city="+city,
+            type:"post",
+            dataType:"json",
+            success:function (data){
+                var str="<option value=''>请选择</option>";
+                for (var i=0;i<data.length;i++){
+                    str+="<option value='"+data[i].areaId+"'>"+data[i].areaName+"</option>";
+                }
+                $("#district").html(str);
+            },error:function (){
+                alert("查询区失败");
+            }
+        })
+
+    }
+
+</script>
+</html>

@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/carmall-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/carmall-feign/pom.xml" />
         <option value="$PROJECT_DIR$/carmall-provider-order/pom.xml" />
+        <option value="$PROJECT_DIR$/carmall-provider-trolley/pom.xml" />
+        <option value="$PROJECT_DIR$/carmall-provider-backstage/pom.xml" />
       </list>
     </option>
   </component>

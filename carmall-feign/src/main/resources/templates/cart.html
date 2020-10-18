@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+
+<table border="1">
+    <tr>
+        <td><input type="checkbox" id="check"></td>
+        <td>车名</td>
+        <td>商品详情</td>
+        <td>图片</td>
+        <td>价格</td>
+        <td>数量</td>
+        <td>小计</td>
+    </tr>
+    <tr th:each="o:${cart.getCartMap().values()}">
+        <td><input name="ProductId" type="checkbox" th:value="${o.getProduct().getId()}">
+            <input type="hidden" th:value="${o.getSubtotal()}" th:id="${o.getProduct().getId()}">
+
+        </td>
+        <td th:text="${o.getProduct().getProductName()}">车名</td>
+        <td th:text="${o.getProduct().getDiscription()}">商品详情</td>
+        <td th:text="${o.getProduct().getPicPath()}">图片</td>
+        <td th:text="${o.getProduct().getPrice()}">价格</td>
+        <td th:text="${o.getCount()}">数量</td>
+        <td th:text="${o.getSubtotal()}">小计</td>
+       <!-- <td><a href="#" th:onclick="'javascript:details('+${o.orderid}+')'">订单详情</a></td>-->
+    </tr>
+</table>
+
+价格<input type="text" id="xiaoji" value="0.0" readonly="readonly"></input>
+<input type="button" value="结算" onclick="jiesuan()"></input>
+
+</body>
+<script>
+    $("#check").click(function () {
+
+        $("input[name='ProductId']").prop("checked",this.checked)
+        var sum=0;
+        $("input[name='ProductId']").each(function (i) {
+            if($(this).prop("checked")){
+                var id= $(this).val();
+                var  price=$("#"+id).val()
+                sum+=parseFloat(price)
+            }
+        })
+        $("#xiaoji").val(sum)
+    })
+
+    $("input[name='ProductId']").click(function (){
+        var sum=0;
+        $("input[name='ProductId']").each(function (i) {
+        if($(this).prop("checked")){
+          var id= $(this).val();
+          var  price=$("#"+id).val()
+          sum+=parseFloat(price)
+
+        }else if (!$(this).prop("checked")){
+            $("#check").prop("checked",this.checked)
+        }
+        })
+        $("#xiaoji").val(sum)
+    })
+    function jiesuan() {
+        var price=$("#xiaoji").val()
+
+        var ids="";
+        $("input[name='ProductId']").each(function (i) {
+            if($(this).prop("checked")){
+                ids+=","+$(this).val();
+            }
+        })
+        ids=ids.substring(1);
+
+        if(ids!=null && ids!=""){
+            location.href="/trolley/jiesuan?ids="+ids+"&price="+price;
+        }else{
+            alert("请选择要买的东西");
+        }
+    }
+
+</script>
+</html>

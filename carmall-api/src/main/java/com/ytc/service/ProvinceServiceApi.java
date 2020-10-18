@@ -6,5 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 public interface ProvinceServiceApi {
+    @RequestMapping("selectProvince")
     List<Province> selectProvince();
 }

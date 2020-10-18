@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+    <form id="addForm">
+        车名:<input type="text" name="name"/><br>
+        价格:<input type="text" name="price"><br>
+        能源:<select name="energy.enid">
+                <option value="">请选择</option>
+                <option value="1">汽油</option>
+                <option value="2">柴油</option>
+                <option value="3">油电混合</option>
+                <option value="4">纯电动</option>
+                <option value="5">插电式混动</option>
+            </select><br>
+        产地国家:<select name="country.coid">
+                    <option value="">请选择</option>
+                    <option value="1">中国</option>
+                    <option value="2">美系</option>
+                    <option value="3">日系</option>
+                    <option value="4">韩系</option>
+                    <option value="5">欧系</option>
+                </select><br>
+        类型:<select name="quantry.quid">
+                <option value="">请选择</option>
+                <option value="1">微型</option>
+                <option value="2">小型</option>
+                <option value="3">紧凑型</option>
+                <option value="4">中型</option>
+                <option value="5">中大型</option>
+                <option value="6">大型</option>
+                <option value="7">跑车</option>
+            </select><br>
+        驱动:<select name="dive.did">
+                <option value="">请选择</option>
+                <option value="1">1.0L以下</option>
+                <option value="2">1.0L-1.6L</option>
+                <option value="3">1.7L-2.0L</option>
+                <option value="4">2.1L-2.5L</option>
+                <option value="5">2.5L以上</option>
+            </select><br>
+        变速箱:<select name="gearbox.geid">
+                <option value="">请选择</option>
+                <option value="1">全自动</option>
+                <option value="2">手动</option>
+            </select><br>
+        品牌:<select name="pinpai.pid">
+        <option value="">请选择</option>
+        <option value="1">奔驰</option>
+        <option value="2">宝马</option>
+        <option value="3">保时捷</option>
+        <option value="4">奥迪</option>
+        <option value="5">大众</option>
+        <option value="6">福克斯</option>
+        <option value="7">捷途</option>
+        <option value="8">悍马</option>
+    </select><br>
+        <div id="fileQueue"></div><br>
+        <input type="button" onclick="addCar()" value="新增"/>
+    </form>
+</body>
+    <script>
+        function addCar() {
+            $.ajax({
+                url:"/addCar",
+                data:$("#addForm").serialize(),
+                type:"post",
+                success:function (data) {
+                location.href="/queryCarList";
+                },error:function () {
+                    alert("新增失败");
+                }
+            })
+        }
+    </script>
+</html>

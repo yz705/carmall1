@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+    <a th:href="@{/toAdd}">新增</a>
+    <table border="1">
+        <tr>
+            <td>车名</td>
+            <td>价格</td>
+            <td>驱动</td>
+            <td>能源</td>
+            <td>变速箱</td>
+            <td>座位</td>
+            <td>品牌</td>
+            <td>国家</td>
+            <td>操作</td>
+        </tr>
+        <tr th:each="car:${list}">
+            <td th:text="${car.name}"></td>
+            <td th:text="${car.price}"></td>
+            <td th:text="${car.dive.dname}"></td>
+            <td th:text="${car.energy.enname}"></td>
+            <td th:text="${car.gearbox.gename}"></td>
+            <td th:text="${car.pinpai.pname}"></td>
+            <td th:text="${car.quantry.quname}"></td>
+             <td th:text="${car.country.countryname}"></td>
+             <td><a th:href="@{/delCar(id=${car.id})}">删除</a>
+                 <a th:href="@{/toUpdateCar(id=${car.id})}">修改</a>
+             </td>
+         </tr>
+     </table>
+ </body>
+ </html>

@@ -6,24 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="carmall-provider-trolley" />
         <module name="carmall-feign" />
-        <module name="carmall-api" />
         <module name="carmall-provider-order" />
         <module name="carmall-eureka" />
+        <module name="carmall-api" />
+        <module name="carmall-provider-backstage" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="carmall-api" target="1.7" />
       <module name="carmall-eureka" target="1.8" />
       <module name="carmall-feign" target="1.8" />
+      <module name="carmall-provider-backstage" target="1.8" />
       <module name="carmall-provider-order" target="1.8" />
+      <module name="carmall-provider-trolley" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="carmall-eureka" options="-parameters" />
       <module name="carmall-feign" options="-parameters" />
+      <module name="carmall-provider-backstage" options="-parameters" />
       <module name="carmall-provider-order" options="-parameters" />
+      <module name="carmall-provider-trolley" options="-parameters" />
     </option>
   </component>
 </project>

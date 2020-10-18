@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/carmall-api/carmall-api.iml" filepath="$PROJECT_DIR$/carmall-api/carmall-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/carmall-eureka/carmall-eureka.iml" filepath="$PROJECT_DIR$/carmall-eureka/carmall-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/carmall-feign/carmall-feign.iml" filepath="$PROJECT_DIR$/carmall-feign/carmall-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-provider-backstage/carmall-provider-backstage.iml" filepath="$PROJECT_DIR$/carmall-provider-backstage/carmall-provider-backstage.iml" />
       <module fileurl="file://$PROJECT_DIR$/carmall-provider-order/carmall-provider-order.iml" filepath="$PROJECT_DIR$/carmall-provider-order/carmall-provider-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/carmall-provider-trolley/carmall-provider-trolley.iml" filepath="$PROJECT_DIR$/carmall-provider-trolley/carmall-provider-trolley.iml" />
     </modules>
   </component>
 </project>

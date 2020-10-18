@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="hidden" name="carid" value="1">
+<img   src="img/1.jpg"  alt="加载失败"/>
+<input type="button" value="购买"  onclick="buycar(1)">
+<input type="button" value="购物车"  onclick="selectcart()">
+</body>
+<script>
+    function buycar(id){
+        location.href="/trolley/insertCart?id="+id;
+    }
+    function selectcart(){
+        location.href="/trolley/selectcart";
+    }
+
+</script>
+</html>

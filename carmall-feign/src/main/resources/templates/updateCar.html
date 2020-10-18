@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="/static/js/jquery.min.js"></script>
+<body>
+    <form th:action="@{/updateCar}" method="post">
+        id:<input type="text" name="id" th:value="${car.id}" readonly="readonly"><br>
+        车名:<input type="text" name="name" th:value="${car.name}"><br>
+        价格:<input type="text" name="price" th:value="${car.price}"><br>
+        能源:<select id="energy" name="energy.enid">
+                <option value="1" ${car.energy.enid==1?"selected":""}>汽油</option>
+                    <option value="1" ${car.energy.enid==2?"selected":""}>柴油</option>
+                    <option value="1" ${car.energy.enid==3?"selected":""}>油电混合</option>
+                    <option value="1" ${car.energy.enid==4?"selected":""}>纯电动</option>
+                    <option value="1" ${car.energy.enid==5?"selected":""}>插电式混动</option>
+                </select>
+        产地国家:<select id="country" name="country.coid">
+                    <option value="1" ${car.country.coid==1?"selected":""}>中国</option>
+                    <option value="2" ${car.country.coid==2?"selected":""}>美系</option>
+                    <option value="3" ${car.country.coid==3?"selected":""}>日系</option>
+                    <option value="4" ${car.country.coid==4?"selected":""}>韩系</option>
+                    <option value="5" ${car.country.coid==5?"selected":""}>欧系</option>
+                </select>
+        类型:<select id="quantry" name="quantry.quid">
+                <option value="1" ${car.quantry.quid==1?"selected":""}>微型</option>
+                <option value="2" ${car.quantry.quid==2?"selected":""}>小型</option>
+                <option value="3" ${car.quantry.quid==3?"selected":""}>紧凑型</option>
+                <option value="4" ${car.quantry.quid==4?"selected":""}>中型</option>
+                <option value="5" ${car.quantry.quid==5?"selected":""}>中大型</option>
+                <option value="6" ${car.quantry.quid==6?"selected":""}>大型</option>
+                <option value="7" ${car.quantry.quid==7?"selected":""}>跑车</option>
+            </select>
+        驱动:<select id="dive" name="dive.did">
+                <option value="1" ${car.dive.did==1?"selected":""}>1.0L以下</option>
+                <option value="2" ${car.dive.did==2?"selected":""}>1.0L-1.6L</option>
+                <option value="3" ${car.dive.did==3?"selected":""}>1.7L-2.0L</option>
+                <option value="4" ${car.dive.did==4?"selected":""}>2.1L-2.5L</option>
+                <option value="5" ${car.dive.did==5?"selected":""}>2.5L以上</option>
+            </select>
+        变速箱:<select id="gearbox" name="gearbox.geid">
+                <option value="1" ${car.gearbox.geid==1?"selected":""}>自动</option>
+                <option value="2" ${car.gearbox.geid==2?"selected":""}>手动</option>
+            </select>
+        品牌:类型:<select id="pinpai" name="pinpai.pid">
+                <option value="1" ${car.pinpai.pid==1?"selected":""}>奔驰</option>
+                <option value="2" ${car.pinpai.pid==2?"selected":""}>宝马</option>
+                <option value="3" ${car.pinpai.pid==3?"selected":""}>保时捷</option>
+                <option value="4" ${car.pinpai.pid==4?"selected":""}>奥迪</option>
+                <option value="5" ${car.pinpai.pid==5?"selected":""}>大众</option>
+                <option value="6" ${car.pinpai.pid==6?"selected":""}>福克斯</option>
+                <option value="7" ${car.pinpai.pid==7?"selected":""}>捷途</option>
+                <option value="8" ${car.pinpai.pid==8?"selected":""}>悍马</option>
+            </select>
+        <input type="submit" value="修改">
+
+    </form>
+</body>
+</html>

@@ -19,20 +19,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aa7ce16-b894-434d-b3d2-f9bdf9a0c4c3" name="Default Changelist" comment="8">
+    <list default="true" id="1aa7ce16-b894-434d-b3d2-f9bdf9a0c4c3" name="Default Changelist" comment="9">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_52_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_20_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_17_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_20_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_20_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_20_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_18_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carmall-api/carmall-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/carmall-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/model/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/model/OrderItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/model/Province.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/service/OrderServiceApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-api/target/classes/com/ytc/service/ProvinceServiceApi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/service/OrderServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/service/OrderServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/service/ProvinceServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-api/src/main/java/com/ytc/service/ProvinceServiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carmall-eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/CarmallFeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/CarmallFeignApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carmall-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carmall-feign/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-feign/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/carmall-provider-order/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +77,7 @@
     <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/resources/templates/orderShow.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/carmall-provider-order/src/main/java/com/ytc/controller/OrderController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/util/RandomIDUtil.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/CarmallFeignApplication.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/carmall-feign/src/main/java/com/ytc/controller/OrderController.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
@@ -78,20 +100,24 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/carmall-provider-order" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/carmall-provider-backstage" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5505747" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\yz\carmall\carmall-api\src\main\java\com\ytc\mapper" />
-      <recent name="E:\yz\carmall\carmall-api\src\main\resources\mapping" />
+      <recent name="E:\yz\carmall\carmall-feign\src\main\java\com\ytc\service" />
+      <recent name="E:\yz\carmall\carmall-api\src\main\java\com\ytc\service" />
       <recent name="E:\yz\carmall\carmall-api\src\main\java\com\ytc\model" />
-      <recent name="E:\yz\carmall\carmall-feign\src\main\resources" />
+      <recent name="E:\yz\carmall" />
       <recent name="E:\yz\carmall\carmall-feign\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -105,7 +131,14 @@
       <recent name="E:\yz\carmall\carmall-feign\src\main\resources\templates\suser" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CarmallProviderOrderApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CarmallFeignApplication">
     <configuration name="CarmallFeignApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ytc.CarmallFeignApplication" />
       <module name="carmall-feign" />
@@ -230,7 +263,11 @@
       <workItem from="1602749715982" duration="5386000" />
       <workItem from="1602763746009" duration="56000" />
       <workItem from="1602810341423" duration="5091000" />
-      <workItem from="1602837074427" duration="1470000" />
+      <workItem from="1602837074427" duration="1493000" />
+      <workItem from="1602904357368" duration="718000" />
+      <workItem from="1602914751371" duration="10597000" />
+      <workItem from="1603001197212" duration="10323000" />
+      <workItem from="1603011859073" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1602247948613</created>
@@ -288,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602761043138</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="9">
+      <created>1602848545988</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1602848545988</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,13 +359,14 @@
     <MESSAGE value="6" />
     <MESSAGE value="7" />
     <MESSAGE value="8" />
-    <option name="LAST_COMMIT_MESSAGE" value="8" />
+    <MESSAGE value="9" />
+    <option name="LAST_COMMIT_MESSAGE" value="9" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1602828531462">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1603004545957">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1602828531462" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1603004545957" />
     <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser" timestamp="1602752967985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -334,66 +379,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602655350484" />
-    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1602749935925">
+    <state x="549" y="166" key="FileChooserDialogImpl" timestamp="1603002235191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602749935925" />
-    <state width="1493" height="121" key="GridCell.Tab.0.bottom" timestamp="1602834746617">
+    <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603002235191" />
+    <state width="1024" height="269" key="GridCell.Tab.0.bottom" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602834746617" />
-    <state width="1493" height="121" key="GridCell.Tab.0.center" timestamp="1602834746617">
+    <state width="1024" height="269" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.0.center" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602834746617" />
-    <state width="1493" height="121" key="GridCell.Tab.0.left" timestamp="1602834746617">
+    <state width="1024" height="269" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.0.left" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602834746617" />
-    <state width="1493" height="121" key="GridCell.Tab.0.right" timestamp="1602834746617">
+    <state width="1024" height="269" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.0.right" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602834746617" />
-    <state width="1493" height="121" key="GridCell.Tab.1.bottom" timestamp="1602834746618">
+    <state width="1024" height="269" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.1.bottom" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602834746618" />
-    <state width="1493" height="121" key="GridCell.Tab.1.center" timestamp="1602834746618">
+    <state width="1024" height="269" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.1.center" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602834746618" />
-    <state width="1493" height="121" key="GridCell.Tab.1.left" timestamp="1602834746617">
+    <state width="1024" height="269" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.1.left" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602834746617" />
-    <state width="1493" height="121" key="GridCell.Tab.1.right" timestamp="1602834746618">
+    <state width="1024" height="269" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="269" key="GridCell.Tab.1.right" timestamp="1603011652477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="121" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602834746618" />
-    <state width="1478" height="317" key="GridCell.Tab.2.bottom" timestamp="1602570879259">
+    <state width="1024" height="269" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1603011652477" />
+    <state width="1024" height="259" key="GridCell.Tab.2.bottom" timestamp="1603010394395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="317" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602570879259" />
-    <state width="1478" height="317" key="GridCell.Tab.2.center" timestamp="1602570879258">
+    <state width="1024" height="259" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603010394395" />
+    <state width="1024" height="259" key="GridCell.Tab.2.center" timestamp="1603010394395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="317" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1602570879258" />
-    <state width="1478" height="317" key="GridCell.Tab.2.left" timestamp="1602570879258">
+    <state width="1024" height="259" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1603010394395" />
+    <state width="1024" height="259" key="GridCell.Tab.2.left" timestamp="1603010394395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="317" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1602570879258" />
-    <state width="1478" height="317" key="GridCell.Tab.2.right" timestamp="1602570879259">
+    <state width="1024" height="259" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1603010394395" />
+    <state width="1024" height="259" key="GridCell.Tab.2.right" timestamp="1603010394395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1478" height="317" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1602570879259" />
-    <state x="429" y="115" key="NewModule_or_Project.wizard" timestamp="1602749922783">
+    <state width="1024" height="259" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1603010394395" />
+    <state x="429" y="115" key="NewModule_or_Project.wizard" timestamp="1603002238068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="429" y="115" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1602749922783" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1602834742469">
+    <state x="429" y="115" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1603002238068" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1603011979499">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602834742469" />
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603011979499" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1602754036519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

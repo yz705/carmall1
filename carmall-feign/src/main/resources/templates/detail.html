@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery.min.js"></script>
+<body>
+<form id="querform" >
+    <input type="hidden" th:value="${ids}" id="cartitemids">
+    <input type="hidden" th:value="${price}" id="prices">
+选择地址
+    <br>
+    <select name="adress"  id="getadress">
+        <option value="">请选择</option>
+    </select>
+    <br>
+    <a href="/adress/addAdress">
+        添加地址
+    </a>
+
+
+
+<table border="1">
+    <tr>
+        <td>车名</td>
+        <td>商品详情</td>
+        <td>图片</td>
+        <td>价格</td>
+        <td>数量</td>
+        <td>小计</td>
+    </tr>
+    <tr th:each="o:${list}">
+        <td th:text="${o.getProduct().getProductName()}">车名</td>
+        <td th:text="${o.getProduct().getDiscription()}">商品详情</td>
+        <td th:text="${o.getProduct().getPicPath()}">图片</td>
+        <td th:text="${o.getProduct().getPrice()}">价格</td>
+        <td th:text="${o.getCount()}">数量</td>
+        <td th:text="${o.getSubtotal()}">小计</td>
+    </tr>
+</table>
+需要支付金额：<a th:text="${price}"></a>
+<input type="button" value="立即支付" onclick="topay()">
+</form>
+</body>
+<script>
+    $(function (){
+        selectadress()
+        /*selectProvince();
+        selectCity();
+        serach();*/
+    })
+    function topay(){
+    var ids=$("#cartitemids").val
+    var price=$("#prices").val
+        location.href="/trolley/topay?ids="+ids
+    }
+   function selectadress() {
+      $.ajax({
+          url:"/adress/selectadress",
+          type:"post",
+          dataType:"json",
+          success:function (data){
+              var str="<option value=''>请选择</option>";
+              for (var i=0;i<data.length;i++){
+                  var ad=data[i].consignee+data[i].phone+data[i].province.areaName+data[i].city.areaName+data[i].district.areaName+data[i].street
+                  alert(ad)
+                  str+="<option value='"+data[i].aid+"'>"+ad+"</option>";
+              }
+              $("#getadress").html(str);
+          },error:function (){
+              alert("地址加载失败");
+          }
+
+
+      })
+   } 
+    
+    
+</script>
+</html>

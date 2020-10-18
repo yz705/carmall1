@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ytc.mapper.CarMapper" >
+  <resultMap id="BaseResultMap" type="com.ytc.model.Car" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="DOUBLE" />
+    <association property="country" javaType="com.ytc.model.Country">
+      <id column="coid" property="coid" jdbcType="INTEGER" />
+      <result column="countryname" property="countryname" jdbcType="VARCHAR" />
+    </association>
+    <association property="dive" javaType="com.ytc.model.Dive">
+      <id column="did" property="did" jdbcType="INTEGER" />
+      <result column="dname" property="dname" jdbcType="VARCHAR" />
+    </association>
+    <association property="energy" javaType="com.ytc.model.Energy">
+      <id column="enid" property="enid" jdbcType="INTEGER" />
+      <result column="enname" property="enname" jdbcType="VARCHAR" />
+    </association>
+    <association property="gearbox" javaType="com.ytc.model.Gearbox">
+      <id column="geid" property="geid" jdbcType="INTEGER" />
+      <result column="gename" property="gename" jdbcType="VARCHAR" />
+    </association>
+    <association property="pinpai" javaType="com.ytc.model.Pinpai">
+      <id column="pid" property="pid" jdbcType="INTEGER" />
+      <result column="pname" property="pname" jdbcType="VARCHAR" />
+    </association>
+    <association property="quantry" javaType="com.ytc.model.Quantry">
+      <id column="quid" property="quid" jdbcType="INTEGER" />
+      <result column="quname" property="quname" jdbcType="VARCHAR" />
+    </association>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, name, price, did, enid, coid, quid, geid, pid
+  </sql>
+
+<select id="toUpdateCar" resultType="integer" resultMap="BaseResultMap">
+  select * from t_car where id=#{id,jdbcType=INTEGER}
+
+</select>
+  <select id="queryCarList" resultMap="BaseResultMap" >
+    SELECT * FROM t_car tc
+LEFT JOIN t_car_country tcc ON tc.coid=tcc.coid
+LEFT JOIN t_car_dive tcd ON tc.did=tcd.did
+LEFT join t_car_energy tce on tc.enid=tce.enid
+LEFT JOIN t_car_gearbox tcg ON tc.geid=tcg.geid
+LEFT JOIN t_car_pinpai tcp ON tc.pid=tcp.pid
+LEFT JOIN t_car_quantry tcq ON tc.quid=tcq.quid
+  </select>
+  <delete id="delCar" parameterType="java.lang.Integer" >
+    delete from t_car
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="addCar" parameterType="com.ytc.model.Car" >
+    insert into t_car values(id, #{c.name}, #{c.price},
+      #{c.dive.did}, #{c.energy.enid}, #{c.country.coid}, #{c.quantry.quid},
+      #{c.gearbox.geid}, #{c.pinpai.pid})
+
+  </insert>
+  <insert id="insertSelective" parameterType="com.ytc.model.Car" >
+    insert into t_car
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="did != null" >
+        did,
+      </if>
+      <if test="enid != null" >
+        enid,
+      </if>
+      <if test="coid != null" >
+        coid,
+      </if>
+      <if test="quid != null" >
+        quid,
+      </if>
+      <if test="geid != null" >
+        geid,
+      </if>
+      <if test="pid != null" >
+        pid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="did != null" >
+        #{did,jdbcType=INTEGER},
+      </if>
+      <if test="enid != null" >
+        #{enid,jdbcType=INTEGER},
+      </if>
+      <if test="coid != null" >
+        #{coid,jdbcType=INTEGER},
+      </if>
+      <if test="quid != null" >
+        #{quid,jdbcType=INTEGER},
+      </if>
+      <if test="geid != null" >
+        #{geid,jdbcType=INTEGER},
+      </if>
+      <if test="pid != null" >
+        #{pid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateCar" >
+    update t_car
+    <set >
+      <if test="c.name != null" >
+        name = #{c.name,jdbcType=VARCHAR},
+      </if>
+      <if test="c.price != null" >
+        price = #{c.price,jdbcType=DECIMAL},
+      </if>
+      <if test="c.dive.did != null" >
+        did = #{c.dive.did,jdbcType=INTEGER},
+      </if>
+      <if test="c.energy.enid != null" >
+        enid = #{c.energy.enid,jdbcType=INTEGER},
+      </if>
+      <if test="c.country.coid != null" >
+        coid = #{c.country.coid,jdbcType=INTEGER},
+      </if>
+      <if test="c.quantry.quid != null" >
+        quid = #{c.quantry.quid,jdbcType=INTEGER},
+      </if>
+      <if test="c.gearbox.geid != null" >
+        geid = #{c.gearbox.geid,jdbcType=INTEGER},
+      </if>
+      <if test="c.pinpai.pid != null" >
+        pid = #{c.pinpai.pid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{c.id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ytc.model.Car" >
+    update t_car
+    set name = #{name,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      did = #{did,jdbcType=INTEGER},
+      enid = #{enid,jdbcType=INTEGER},
+      coid = #{coid,jdbcType=INTEGER},
+      quid = #{quid,jdbcType=INTEGER},
+      geid = #{geid,jdbcType=INTEGER},
+      pid = #{pid,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ytc.mapper.QuantryMapper" >
+  <resultMap id="BaseResultMap" type="com.ytc.model.Quantry" >
+    <id column="quid" property="quid" jdbcType="INTEGER" />
+    <result column="quname" property="quname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    quid, quname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_car_quantry
+    where quid = #{quid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_car_quantry
+    where quid = #{quid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ytc.model.Quantry" >
+    insert into t_car_quantry (quid, quname)
+    values (#{quid,jdbcType=INTEGER}, #{quname,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ytc.model.Quantry" >
+    insert into t_car_quantry
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="quid != null" >
+        quid,
+      </if>
+      <if test="quname != null" >
+        quname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="quid != null" >
+        #{quid,jdbcType=INTEGER},
+      </if>
+      <if test="quname != null" >
+        #{quname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ytc.model.Quantry" >
+    update t_car_quantry
+    <set >
+      <if test="quname != null" >
+        quname = #{quname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where quid = #{quid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ytc.model.Quantry" >
+    update t_car_quantry
+    set quname = #{quname,jdbcType=VARCHAR}
+    where quid = #{quid,jdbcType=INTEGER}
+  </update>
+</mapper>

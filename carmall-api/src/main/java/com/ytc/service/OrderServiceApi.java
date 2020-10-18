@@ -10,6 +10,6 @@ public interface OrderServiceApi {
     @RequestMapping("/queryOrder")
     List<Order> select();
 
-    @RequestMapping("/selectOrder")
+    @RequestMapping("/queryOrder")
     Order selectOrder(Integer address1);
 }
